@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>
+concate string</title></head>
+<script type="text/javascript">
+function msgfun()
+{
+	a=10;
+	a+=10;
+	a=a+10;
+	var msg="hi how are you"
+	
+	msg+='document.getElementById("ln").value+''+document.getElementById("fn").value+''document.getElementById("mn").value;
+	alert(msg);
+	document.getelementById("data").innerHTMLmsg;
+	//document.write(msg);
+	return false;
+	}
+	</script>
+	<body>
+	<form onsubmit="return msgfun()">
+	last name:
+	<input type="text" id="ln"><br>
+	first name:
+	<input type="text" id="fn"><br>
+	middle name:
+	<input type="text" id="mn"><br>
+	</form>
+	</body>
+	</html>
