@@ -1,0 +1,27 @@
+code to create file - fopen()
+<?php
+$file = fopen(“demo.txt”,'w');
+?>
+----------------------------------------------
+fread()
+<?php
+$filename = "demo.txt";
+$file = fopen( $filename, 'r' );
+$size = filesize( $filename );
+$filedata = fread( $file, $size );
+?>
+-----------------------------------------------
+fwrite()
+<?php
+$file = fopen("demo.txt", 'w');
+$text = "Hello world\n";
+fwrite($file, $text);
+?>
+------------------------------------------------
+fclose()
+<?php
+$file = fopen("demo.txt", 'r');
+//some code to be executed
+fclose($file);
+?>
+------------------------------------------------
