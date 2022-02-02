@@ -5,6 +5,36 @@ CREATE TABLE  `users` (
  `age` INT( 3 ) NOT NULL ,
  `email` VARCHAR( 100 ) NOT NULL
 ) ENGINE = INNODB DEFAULT CHARSET = Latin1;
+---------------------------------
 
 -------------CONNECTION------------
 
+
+<?php
+$databaseHost = 'localhost';
+$databaseName = 'test';
+$databaseUsername = 'root';
+$databasePassword = '';
+
+$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
+?>
+-----------------------------------------
+-----------INSERT------------------
+
+<?php
+include_once("config.php");
+if(isset($_POST['Submit'])) {	
+$name = $_POST['name'];
+$age = $_POST['age'];
+$email =$_POST['email'];
+
+$result = mysqli_query($mysqli, "INSERT INTO users(name,age,email) VALUE
+('$name','$age','$email')");
+echo "<font color="black">Data added successfully.";
+echo "<br><a href='index.php'>View Result";
+}
+}
+?>
+
+</font>
+----------------------------
