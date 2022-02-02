@@ -1,0 +1,10 @@
+--------CREATE TABLE---------
+CREATE TABLE  `users` (
+ `id` INT( 11 ) NOT NULL ,
+ `name` VARCHAR( 100 ) NOT NULL ,
+ `age` INT( 3 ) NOT NULL ,
+ `email` VARCHAR( 100 ) NOT NULL
+) ENGINE = INNODB DEFAULT CHARSET = Latin1;
+
+-------------CONNECTION------------
+
